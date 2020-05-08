@@ -4,36 +4,28 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore Template folder.
-/Template
-
 # Ignore bundler config.
-/Projects/the-gossip-project/.bundle
+/.bundle
 
 # Ignore all logfiles and tempfiles.
-/Projects/the-gossip-project/log/*
-/Projects/the-gossip-project/tmp/*
-/Projects/the-gossip-project/!/log/.keep
-/Projects/the-gossip-project/!/tmp/.keep
-
-# Ignore pidfiles, but keep the directory.
-/Projects/the-gossip-project/tmp/pids/*
-/Projects/the-gossip-project/!/tmp/pids/
-/Projects/the-gossip-project/!/tmp/pids/.keep
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
 # Ignore uploaded files in development.
-/Projects/the-gossip-project/storage/*
-/Projects/the-gossip-project/!/storage/.keep
+/storage/*
+!/storage/.keep
 
-/Projects/the-gossip-project/public/assets
-/Projects/the-gossip-project/.byebug_history
+/public/assets
+.byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/Projects/the-gossip-project/config/master.key
+/config/master.key
 
-/Projects/the-gossip-project/public/packs
-/Projects/the-gossip-project/public/packs-test
-/Projects/the-gossip-project/node_modules
-/Projects/the-gossip-project/yarn-error.log
-/Projects/the-gossip-project/yarn-debug.log*
-/Projects/the-gossip-project/.yarn-integrity
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
